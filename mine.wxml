@@ -1,0 +1,37 @@
+<!-- 在个人中心显示用户微信头像 -->
+<view class='content'>
+  <view class='nav'>
+    <view class='top'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+
+    <view class='item'>
+      <text class='left'>昵称：</text> 
+      <open-data type="userNickName" class='right'></open-data>
+    </view>
+
+    <view class='item'>
+      <text class='left'>性别：</text> 
+      <open-data type="userGender" class='right'></open-data>
+    </view>
+
+    <view class='item'>
+      <text class='left'>语言：</text> 
+      <open-data type="userLanguage" class='right'></open-data>
+    </view>
+
+    <view class='item'>
+      <text class='left'>地区：</text> 
+      <open-data type="userCountry" class='right'></open-data>
+    </view>
+
+    <view class="item">
+      <text class='left' bindtap="askfor_records">点击查询申请记录</text><text class="right">>>></text>      
+    </view>
+
+    <view class='item' bindtap='exit'>
+      <text class='left'>退出：</text><text class='right'>>>></text>
+    </view>
+  
+</view>

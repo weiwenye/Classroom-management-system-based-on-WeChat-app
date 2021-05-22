@@ -1,0 +1,36 @@
+button{
+  margin-top:100rpx;
+  width: 50rpx;
+}
+.tab{
+  display: flex;
+  height: 30rpx;
+}
+.first_line{
+  display: flex;
+  justify-content: center;
+}
+.searchbox{
+  display: flex;
+  flex-direction: row;
+  border:1px solid #fc86ad;
+  border-radius: 20px;
+  width: max-content;
+  height:43px;
+  align-items: center;
+}
+input{
+  margin-left: 12px;
+  font-size: 20px;
+  width:150px;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+<view>
+  <text>预约空间：</text>
+</view>
+
+<view class="tab"></view>
+
+<view class='fenlei'>
+  <text>周次</text>
+  <!-- 下拉框 -->
+    <view class='select_box'>
+      <view class='select' catchtap='selectTaps1'>
+        <text class='select_text'>第{{selectDatas1[indexs1]}}周</text>
+        <!-- <image class='words_img' src='../../images/sanjiao.png'></image> -->
+        <image class='select_img {{shows1&&"select_img_rotate"}}' src='../../icons/倒三角形.png'></image>
+      </view>
+      <view class='option_box' style='height:{{shows1?(selectDatas1.length>5?300:selectDatas1.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs1==selectDatas1.length-1&&"border:0;"}}' wx:for='{{selectDatas1}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps1'>第{{item}}周</text>
+      </view>
+    </view>
+</view>
+
+<view class="tab"></view>
+
+<view class='fenlei'>
+  <text>星期</text>
+  <!-- 下拉框 -->
+    <view class='select_box'>
+      <view class='select' catchtap='selectTaps2'>
+        <text class='select_text'>星期{{selectDatas2[indexs2]}}</text>
+        <!-- <image class='words_img' src='../../images/sanjiao.png'></image> -->
+        <image class='select_img {{shows2&&"select_img_rotate"}}' src='../../icons/倒三角形.png'></image>
+      </view>
+      <view class='option_box' style='height:{{shows2?(selectDatas2.length>5?300:selectDatas2.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs2==selectDatas2.length-1&&"border:0;"}}' wx:for='{{selectDatas2}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps2'>星期{{item}}</text>
+      </view>
+    </view>
+</view>
+
+<view class="tab"></view>
+
+<view class='fenlei'>
+  <text>节次</text>
+  <!-- 下拉框 -->
+    <view class='select_box'>
+      <view class='select' catchtap='selectTaps3'>
+        <text class='select_text'>第{{selectDatas3[indexs3]}}节课</text>
+        <!-- <image class='words_img' src='../../images/sanjiao.png'></image> -->
+        <image class='select_img {{shows3&&"select_img_rotate"}}' src='../../icons/倒三角形.png'></image>
+      </view>
+      <view class='option_box' style='height:{{shows3?(selectDatas3.length>5?300:selectDatas3.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs3==selectDatas3.length-1&&"border:0;"}}' wx:for='{{selectDatas3}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps3'>第{{item}}节课</text>
+      </view>
+    </view>
+</view>
+
+<view class="btn blue" bindtap="now_search_time">
+  <text>搜索</text>
+</view>
+
+<view class="tab"></view>
+
+<view>
+  <text>查询空间：</text>
+</view>
+<view class="item">
+  <text class='left' bindtap="askfor_records">点击查询申请记录</text><text bindtap="askfor_records" class="right">>>></text>  
+</view>
+
+<view>
+  <text>审批空间：</text>
+</view>
+<view class="item">
+  <navigator class='left' url="../teacher_reply/teacher_reply">
+    <text>点击进行审批</text> 
+  </navigator>
+  <navigator class="right" url="../teacher_reply/teacher_reply">
+    <text>>>></text>    
+  </navigator>
+</view>
+
+<view class="content">
+  <view class='item' bindtap='exit'>
+    <text class='left'>退出：</text><text class='right'>>>></text>
+  </view>
+</view>

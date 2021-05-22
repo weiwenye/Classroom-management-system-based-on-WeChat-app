@@ -1,0 +1,23 @@
+<!-- 空格 -->
+<view class="tab"></view>
+<view class="tab"></view>
+<view class="tab"></view>
+
+<view class="first_line">
+  <view class="searchbox">
+    <input placeholder="请输入工号" bindinput="getInputID" value="{{login_ID}}"></input>
+  </view>
+</view>
+
+<view class="tab"></view>
+
+<view class="first_line">
+  <view class="searchbox">
+    <input placeholder="请输入密码" bindinput="getInputPassword" value="{{login_password}}"></input>
+  </view>
+</view>
+
+<button type="primary" plain open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo" bindtap="click_login">
+登录
+</button>
+

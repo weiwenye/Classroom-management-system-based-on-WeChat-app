@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh":true,
+  "navigationBarBackgroundColor": "#fc86ad",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "教室管理系统(学生版)",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}

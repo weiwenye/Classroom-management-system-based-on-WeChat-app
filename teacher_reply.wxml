@@ -1,0 +1,19 @@
+<view class="tab"></view>
+<view class="tab"></view>
+
+<view class="first_line">
+  <view class="searchbox">
+    <input placeholder="请输入申请编号" bindinput="getInputNo" value="{{No}}"></input>
+  </view>
+</view>
+
+<view class="tab"></view>
+
+<button type="primary" plain bindtap="select_pass">
+通过
+</button>
+
+<button type="primary" plain bindtap="select_fail">
+不通过
+</button>
+

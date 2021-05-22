@@ -1,0 +1,52 @@
+<!-- 空格 -->
+<view class="tab"></view>
+<view class="tab"></view>
+
+<view class="first_line">
+  <view class="searchbox">
+    <input placeholder="请输入教室名称" bindinput="getInputRoomName" value="{{RoomName}}"></input>
+  </view>
+</view>
+
+<view class="tab"></view>
+
+<view class="first_line">
+  <view class="searchbox">
+    <input placeholder="请输入周次" bindinput="getInputWeeks" value="{{Weeks}}"></input>
+  </view>
+</view>
+
+<view class="tab"></view>
+
+<view class="first_line">
+  <view class="searchbox">
+    <input placeholder="请输入星期" bindinput="getInputWeekdays" value="{{Weekdays}}"></input>
+  </view>
+</view>
+
+<view class="tab"></view>
+
+<view class="first_line">
+  <view class="searchbox">
+    <input placeholder="请输入节次" bindinput="getInputTimes" value="{{Times}}"></input>
+  </view>
+
+</view><view class="tab"></view>
+
+<view class="first_line">
+  <view class="searchbox">
+    <input placeholder="请输入申请原因" bindinput="getInputReason" value="{{Reason}}"></input>
+  </view>
+
+</view><view class="tab"></view>
+
+<view class="first_line">
+  <view class="searchbox">
+    <input placeholder="请输入审批教师" bindinput="getInputTeacherID" value="{{TeacherID}}"></input>
+  </view>
+</view>
+
+<button type="primary" plain open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo" bindtap="click_apply">
+提交
+</button>
+

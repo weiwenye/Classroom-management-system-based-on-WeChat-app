@@ -1,0 +1,13 @@
+<!-- 空格 -->
+<view class="tab"></view>
+
+<text>请选择您的身份!</text>
+
+<view class="tab"></view>
+<view class="tab"></view>
+
+<button bindtap="select_student">学生</button>
+
+<view class="tab"></view>
+
+<button bindtap="select_teacher">老师</button>

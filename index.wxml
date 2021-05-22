@@ -1,0 +1,97 @@
+<view class="first_line">
+  <view class="searchbox">
+    <input placeholder="请输入" bindinput="getInput" value="{{search_val}}"></input>
+    <icon type="cancel" bindtap="now_cancel" color="grey" size="30" wx:if="{{isCancel}}"></icon>
+    <view class="btn blue" wx:if="{{isSearch}}" bindtap="now_search">
+      <text>搜索</text>
+    </view>
+  </view>
+</view>
+
+<view>
+  <text>预约空间：</text>
+</view>
+
+<view class="hengxiang_button">
+  <view class="long_button">
+    <text>教室:</text>
+  </view>
+  <view class=long_button">
+    <navigator url="../building_N/building_N">
+      <text>N楼</text>
+    </navigator>
+  </view>
+  <view class="long_button">
+    <text bindtap="click_NULL">S楼</text>
+  </view>
+  <view class="long_button">
+    <text bindtap="click_NULL">s1楼</text>
+  </view>
+  <view class="long_button">
+    <text bindtap="click_NULL">s2楼</text>
+  </view>
+  <view class=long_button">
+    <text bindtap="click_NULL">s3楼</text>
+  </view>
+</view>
+
+
+
+
+<view class="tab"></view>
+
+
+<view class='fenlei'>
+  <text>周次</text>
+  <!-- 下拉框 -->
+    <view class='select_box'>
+      <view class='select' catchtap='selectTaps1'>
+        <text class='select_text'>第{{selectDatas1[indexs1]}}周</text>
+        <!-- <image class='words_img' src='../../images/sanjiao.png'></image> -->
+        <image class='select_img {{shows1&&"select_img_rotate"}}' src='../../icons/倒三角形.png'></image>
+      </view>
+      <view class='option_box' style='height:{{shows1?(selectDatas1.length>5?300:selectDatas1.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs1==selectDatas1.length-1&&"border:0;"}}' wx:for='{{selectDatas1}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps1'>第{{item}}周</text>
+      </view>
+    </view>
+</view>
+
+<view class="tab"></view>
+
+<view class='fenlei'>
+  <text>星期</text>
+  <!-- 下拉框 -->
+    <view class='select_box'>
+      <view class='select' catchtap='selectTaps2'>
+        <text class='select_text'>星期{{selectDatas2[indexs2]}}</text>
+        <!-- <image class='words_img' src='../../images/sanjiao.png'></image> -->
+        <image class='select_img {{shows2&&"select_img_rotate"}}' src='../../icons/倒三角形.png'></image>
+      </view>
+      <view class='option_box' style='height:{{shows2?(selectDatas2.length>5?300:selectDatas2.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs2==selectDatas2.length-1&&"border:0;"}}' wx:for='{{selectDatas2}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps2'>星期{{item}}</text>
+      </view>
+    </view>
+</view>
+
+<view class="tab"></view>
+
+<view class='fenlei'>
+  <text>节次</text>
+  <!-- 下拉框 -->
+    <view class='select_box'>
+      <view class='select' catchtap='selectTaps3'>
+        <text class='select_text'>第{{selectDatas3[indexs3]}}节课</text>
+        <!-- <image class='words_img' src='../../images/sanjiao.png'></image> -->
+        <image class='select_img {{shows3&&"select_img_rotate"}}' src='../../icons/倒三角形.png'></image>
+      </view>
+      <view class='option_box' style='height:{{shows3?(selectDatas3.length>5?300:selectDatas3.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs3==selectDatas3.length-1&&"border:0;"}}' wx:for='{{selectDatas3}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps3'>第{{item}}节课</text>
+      </view>
+    </view>
+</view>
+
+<view class="btn blue" bindtap="now_search_time">
+  <text>搜索</text>
+</view>
+
+<view class="tab"></view>

@@ -1,0 +1,43 @@
+{
+  "pages": [   
+    "pages/select_character/select_character",
+    "pages/login/login",
+    "pages/login_teacher/login_teacher",
+    "pages/index/index",
+    "pages/teacher_index/teacher_index",
+    "pages/mine/mine", 
+    "pages/search_result/search_result",
+    "pages/menu/menu",
+    "pages/menu_teacher/menu_teacher",
+    "pages/teacher_reply/teacher_reply",
+    "pages/records/records",
+    "pages/building_N/building_N"
+  ],
+  "window": {
+    "enablePullDownRefresh":true,
+    "backgroundTextStyle":"dark",
+    "backgroundColor": "#fc86ad",
+    "navigationBarBackgroundColor": "#fc86ad",
+    "navigationBarTitleText": "教室预约管理系统",
+    "navigationBarTextStyle": "black"
+  },
+"tabBar": {
+  "color":"#000",
+  "selectedColor": "#000000",
+  "backgroundColor": "#fc86ad",
+  "list": [{
+    "pagePath": "pages/index/index",
+    "text": "预约广场",
+    "iconPath": "icons/classroom_.png",
+    "selectedIconPath": "icons/classroom.png"
+  },
+  {
+    "pagePath": "pages/mine/mine",
+    "text": "个人中心",
+    "iconPath": "icons/mine_.png",
+    "selectedIconPath": "icons/mine.png"
+  }]
+},
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

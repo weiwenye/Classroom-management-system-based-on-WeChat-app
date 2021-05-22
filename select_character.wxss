@@ -1,0 +1,4 @@
+.tab{
+  display: flex;
+  height: 30rpx;
+}

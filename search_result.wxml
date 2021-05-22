@@ -1,0 +1,11 @@
+<view>
+  <text>共查询到{{roominfo.length}}条结果：</text>
+</view>
+<!-- 循环显示 -->
+<view wx:for="roominfo" wx:if="{{index<roominfo.length}}">
+  <navigator url="../menu/menu">
+    <text>{{roominfo[index].Building}}楼</text>
+    <text>{{roominfo[index].RoomName}}，</text>
+    <text>教室容量：{{roominfo[index].Capacity}}</text>
+  </navigator>
+</view>

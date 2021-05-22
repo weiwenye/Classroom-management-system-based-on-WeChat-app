@@ -1,0 +1,19 @@
+.tab{
+  display: flex;
+  height: 50rpx;
+}
+.data{
+  display: flex;
+  flex-direction: column;
+}
+.left{
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+.right{
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  color: #ccc;
+}

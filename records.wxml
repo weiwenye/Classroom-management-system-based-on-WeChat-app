@@ -1,0 +1,18 @@
+<view>
+  <text>共查询到{{askfor_records.length}}条搜索记录：</text>
+</view>
+<view class="tab"></view>
+<!-- 循环显示满足要求的askfor_records数组中的内容 -->
+<view wx:for="askfor_records" wx:if="{{index<askfor_records.length}}">
+  <text class="data">申请编号:{{askfor_records[index].AppNo}},</text>
+  <text class="data">申请时间:{{askfor_records[index].AppTime}},</text>
+  <text class="data">房间名称:{{askfor_records[index].RoomName}},</text>
+  <text class="data">申请人ID:{{askfor_records[index].AppID}},</text>
+  <text class="data">周次:{{askfor_records[index].Weeks}},</text>
+  <text class="data">星期:{{askfor_records[index].Weekdays}},</text>
+  <text class="data">节次:{{askfor_records[index].Times}},</text>
+  <text class="data">申请原因:{{askfor_records[index].AppReason}},</text>
+  <text class="data">审批教师ID:{{askfor_records[index].AppTeacherID}},</text>
+  <text class="data">申请状态:{{askfor_records[index].AppStatus}}.</text>
+  <view class="tab"></view>
+</view>

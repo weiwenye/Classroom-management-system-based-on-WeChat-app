@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh":true,
+  "navigationBarBackgroundColor": "#fc86ad",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "申请记录查询",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}
